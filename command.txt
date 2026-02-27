@@ -1,0 +1,51 @@
+﻿1.   mv new1.txt new2.txt
+2.   /Desktop/ciyaa/network/net$ mv work network
+3.   rm new.txt
+4.   -cvf abcd.tar net
+      net/
+     net/abcd.tar
+     net/new2.txt
+     net/network/
+5.  tar -xvf abcd.tar
+     net/
+     net/abcd.tar
+     net/new2.txt
+     net/network/
+6.   -l new2.txt
+      0 new2.txt
+7.   wc -w new2.txt
+     1 new2.txt
+8.   head -n new2.txt
+     head: invalid number of lines: ‘new2.txt’
+9.   -q new2.txt
+     hellooomca
+10.  head -v new2.txt
+      ==> new2.txt <==
+      hellooomca
+11.   tail -n new2.txt
+       tail: invalid number of lines: ‘new2.txt’
+12.   ail -f new2.txt
+       hellooo^Z 
+13.  cut -c 1-5 new2.txt
+       hello
+14.   paste -d new2.txt new.txt
+       hloo good morning
+15.   grep -n "good" new.txt
+       1:hloo good morning
+16.   expr 10 + 5
+        15
+17.   expr 10 - 5
+         5
+18.   chmod o+r new.txt
+19.   sudo chown mca new.txt
+        [sudo] password for mca: 
+
+20.   ls > new.txt
+        ls -n new.txt
+         cat new.txt
+         abcd.tar
+         network
+         new2.txt
+          new.txt
+21.  ls |wc -l
+       4
